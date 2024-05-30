@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import useCrudToken from "../hooks/useCrudToken";
 import ReservationCard from "../components/ReservationPage/ReservationCard";
+import './styles/ReservationsPage.css'
+
 
 const ReservationsPage = () => {
 
@@ -14,9 +16,9 @@ const ReservationsPage = () => {
     }, [])
 
   return (
-      <article>
-        <h2>Active Reservations</h2>
-        <div>
+      <article className="conainter__reservation">
+        <h2 className="reservation__title">Active Reservations</h2>
+        <div className="container__reser_cards">
             {
                 
                 reservations?.length > 0 ? (reservations?.map( reservation => (
@@ -27,7 +29,7 @@ const ReservationsPage = () => {
                     />
                 ))) 
                 
-                : <h3>YOU NOT HAVE ANY RESERVATIONS 😩😭😩🤬</h3>
+                : <h3  className="reservation__title">YOU NOT HAVE ANY RESERVATIONS 😩😭😩🤬</h3>
                 
             }
         </div>

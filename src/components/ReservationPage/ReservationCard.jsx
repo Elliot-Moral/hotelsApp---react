@@ -1,4 +1,7 @@
 import useCrudToken from "../../hooks/useCrudToken";
+import './styles/ReservationCard.css'
+
+
 
 const ReservationCard = ({reservation, deleteReservation}) => {
 
@@ -15,30 +18,36 @@ const ReservationCard = ({reservation, deleteReservation}) => {
     }
 
   return (
-    <div>
-        <div>
-            <div>
+    <div className="container__reservationCard">
+
+        <div className="reservationCard__main">
+
+            <div className="reservationCard__image">
                 <img src={reservation?.hotel.images[0].url} alt="" />
             </div>
-            <h3>{reservation?.hotel.name}</h3>
-            <div>
+
+            <div className="reservationCard__info">
+                <h3>{reservation?.hotel.name}</h3>
                 <span>{reservation?.hotel.city.name}, </span>
                 <span>{reservation?.hotel.city.country}</span>
+                <br />
                 <button>Rate an comments this visit...</button>
             </div>
+
         </div>
-        <div>
-            <ul>
-                <li>
+
+        <div className="reservationCard__data">
+            <ul className="reservationCard__ul">
+                <li className="li_item">
                     <span>Reservations Days </span>
-                    <span>{reservacionDays}</span>
+                    <span className="li_data">{reservacionDays}</span>
                 </li>
-                <li>
+                <li className="li_item">
                     <span>Subtotal Price </span>
-                    <span>{ reservacionDays * Number(reservation?.hotel.price) }</span>
+                    <span className="li_data" >{ reservacionDays * Number(reservation?.hotel.price) }</span>
                 </li>
             </ul>
-            <button onClick={handDelete}>Delete!</button>
+            <button className="reservationCard__btn" onClick={handDelete}>Delete!</button>
         </div>
     </div>
   )

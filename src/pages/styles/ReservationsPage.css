@@ -1,0 +1,15 @@
+.conainter__reservation{
+
+}
+.reservation__title{
+    text-align: center;
+    color: #444;
+}
+
+.container__reser_cards{
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}

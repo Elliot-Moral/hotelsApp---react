@@ -24,10 +24,14 @@
     list-style: none;
     margin: 0;
     li{
-        margin-right: 15px;
+        margin-right: 20px;
         a{
             color: #424242; 
             text-decoration:none;
+        }
+        a:hover{
+            color: #882323; 
+            text-decoration: underline;
         }
     }
 }
