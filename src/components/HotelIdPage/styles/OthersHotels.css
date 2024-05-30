@@ -1,0 +1,4 @@
+.conainter__othersHotels{
+    display: grid;
+    grid-template-columns: max(300px) 1fr ;
+}

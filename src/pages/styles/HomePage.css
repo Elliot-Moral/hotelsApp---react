@@ -1,0 +1,36 @@
+.container__home{
+    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: max(300px) 1fr ;
+    grid-template-areas: 'search search '
+                         'aside cards ';
+    justify-items: center;
+}
+
+.container__filtername{
+    grid-area: search;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__aside{
+    max-width: 240px;
+    grid-area: aside;
+}
+
+.container__cards{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: grid;
+    gap:20px;
+    justify-items: center;
+    grid-area: cards;
+}
+
+.container__filters{
+    padding: 20px;
+}

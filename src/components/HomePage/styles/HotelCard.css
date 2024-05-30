@@ -1,0 +1,38 @@
+.container__card{
+    width: 250px;
+    background-color:rgb(239, 239, 239);
+    border-radius: 20px;
+    box-shadow: .5em .5em 1em #0005;
+    transition: transform .2s ease;
+    
+}
+.hotel__header{
+    img{ 
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
+}
+
+.hotel__data{
+    padding: 15px;
+    
+}
+.hotel__body{
+    display: flex;
+    justify-content: center;
+    button{
+        background-color:#D35451;
+        color: #fff;
+        padding: 7px 12px;
+        border-radius: 10px;
+        border: 0;
+        margin-bottom: 15px;
+    }
+    button:hover{
+        background-color:#FA4040;
+    }
+}
+
+.container__card:hover{
+    transform: scale(1.1);
+}

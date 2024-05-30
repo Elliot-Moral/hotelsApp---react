@@ -1,0 +1,16 @@
+.filterCity__ul{
+    margin: 0;
+    padding: 0;
+}
+.filterCity__item{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #D35451;
+        color: azure;
+    }
+}

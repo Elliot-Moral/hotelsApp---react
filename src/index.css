@@ -1,0 +1,21 @@
+html{
+  font-family: Lato, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+img{
+  display: block;
+}
+
+h1, h2, h3, h4, ul{
+  margin-left: 0;
+  margin-right: 0;
+}
+

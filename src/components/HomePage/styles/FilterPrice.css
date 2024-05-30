@@ -1,0 +1,27 @@
+.price__from{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price__span{
+    display: block;
+    margin-left: 15px;
+    padding: 10px 0;
+}
+.price__input{
+    height: 25px;
+    border: 1px solid #4444;
+    width: 177px;
+}
+.price__btn{
+    margin-top: 15px;
+    width: 177px;
+    height: 30px;
+    border: 0;
+    color: azure;
+    background-color:#D35451;
+    &:hover{
+        background-color:#fa4040;
+    }
+}

@@ -1,0 +1,29 @@
+.container__pageid{
+    max-width: 1100px;
+    margin: 3em auto ;
+}
+
+.pageid__mainInfo{
+    text-align: center;
+    margin-bottom: 3em;
+}
+.pageid__starts{
+    display: flex;
+    justify-content: center;
+}
+
+.pageid__images{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 3em;
+    .page__img{
+        width: 500px;
+        img{
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
