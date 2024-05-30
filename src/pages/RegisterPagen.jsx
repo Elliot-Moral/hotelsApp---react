@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 import useAuth from "../hooks/useAuth";
+import './styles/RegisterPagen.css'
 
 const RegisterPagen = () => {
 
@@ -18,10 +19,10 @@ function capturarDatos(data){
 }
 
   return (
-    <section>
-        <form onSubmit={handleSubmit(capturarDatos)}>
-            <h2>Register</h2>
-            <div>
+    <section className="conainter__resgister">
+        <form className="register__form" onSubmit={handleSubmit(capturarDatos)}>
+            <h2 className="register__title" >Register</h2>
+            <div className="register__content login__content">
                 <label>
                     <span>First name</span>
                     <input {...register('firstName')} type="text" />
@@ -40,14 +41,14 @@ function capturarDatos(data){
                 </label>
                 <label>
                     <span>Gender</span>
-                    <select {...register('gender')}>
+                    <select className="legister_select" {...register('gender')}>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                     </select>
                 </label>
             </div>
-            <button>Submit</button>    
+            <button className="login__btn">Register Now</button>    
             </form>
     </section>
   )
