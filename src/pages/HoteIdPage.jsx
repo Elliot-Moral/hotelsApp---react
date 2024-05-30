@@ -83,7 +83,7 @@ const HomeIdPage = () => {
         }
        
       </section>
-
+        
       <OthersHotels city={hotel?.city} id={hotel?.id}/>
    
 

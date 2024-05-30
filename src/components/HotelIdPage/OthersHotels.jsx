@@ -19,8 +19,8 @@ const OthersHotels = ({city, id}) => {
     }, [city])
 
     return (
-        <section>
-            <h3>Others Hotels in your <span>{city?.country}</span></h3>
+        <section className="others__hotles_content">
+            <h3>Others Hotels in <span>{city?.country}</span></h3>
             <div className="conainter__othersHotels">
                 {   //# hago el esfuerzo e enteder la linea siguiente del filter.
                     hotelByCity?.filter(hotel => hotel.id !== id).map(hotel => (

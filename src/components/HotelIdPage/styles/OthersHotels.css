@@ -1,4 +1,13 @@
 .conainter__othersHotels{
     display: grid;
-    grid-template-columns: max(300px) 1fr ;
+    
+    /* Lo ideal esto grid-template-columns: max(300px) 1fr ; 
+    pero por temas esteticos dejo que solo sean dos columns 
+    ya que la mayoria solo salen dos hoteles en la ciudad fuera de que ya esta
+    */
+    
+    grid-template-columns:  1fr 1fr;
+    max-width: 700px;
+    margin: auto;
+    justify-items: center
 }

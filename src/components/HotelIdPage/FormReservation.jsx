@@ -1,6 +1,8 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import useCrudToken from '../../hooks/useCrudToken';
+import './styles/FormReservation.css'
+
 
 const FormReservation = ({hotelId}) => {
 
@@ -24,17 +26,20 @@ function submit(data) {
 }
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
-        <h3>if you want a room book, please, give me your:</h3>
-        <label>
-            <span>Check-in</span>
-            <input {...register('checkIn')} type="date" />
-        </label>
-        <label>
-            <span>Check-out</span>
-            <input  {...register('checkOut')} type="date" />
-        </label>
-        <button>Reservar now!</button>
+    <form className='container__reservationForm' onSubmit={handleSubmit(submit)}>
+        <h3 className='reservationForm__title'>To Make A Reservation</h3>
+        <div className='reservationForm__data'>
+            <label>
+                <span>Check-in</span>
+                <input {...register('checkIn')} type="date" />
+            </label>
+            <label>
+                <span>Check-out</span>
+                <input  {...register('checkOut')} type="date" />
+            </label>      
+        </div>
+
+        <button className='reservationForm__btn'>Reservar now!</button>
     </form>
   )
 }
